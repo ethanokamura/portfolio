@@ -1,0 +1,167 @@
+{
+  "personalInfo": {
+    "name": "Ethan",
+    "email": "eokamura@ucsc.edu",
+    "github": "github.com/ethanokamura",
+    "website": "ethanokamura.io",
+    "title": "I build software to make my life easier.",
+    "bio": "Computer Science student at UC Santa Cruz with a passion for building scalable applications and elegant user experiences. Currently leading product development at CorkVision, architecting cross-platform solutions with Flutter, AWS, and modern web technologies."
+  },
+  "education": [
+    {
+      "institution": "University Of California, Santa Cruz",
+      "location": "Santa Cruz, CA",
+      "degree": "Bachelor's in Computer Science",
+      "startDate": "Fall 2024",
+      "endDate": "Spring 2026",
+      "status": "In Progress"
+    },
+    {
+      "institution": "Cabrillo College",
+      "location": "Aptos, CA",
+      "degree": "Studied Mathematics and Computer Science",
+      "startDate": "Fall 2021",
+      "endDate": "Spring 2024",
+      "status": "Completed"
+    }
+  ],
+  "experience": [
+    {
+      "title": "Founding Product Engineer",
+      "company": "CorkVision",
+      "location": "Remote",
+      "startDate": "January 2025",
+      "endDate": "Present",
+      "current": true,
+      "responsibilities": [
+        "Built over 60% of the production codebase as lead product engineer on a 5-person development team, architecting cross-platform web and mobile applications using Flutter, AWS (RDS, S3, Cognito), and real-time WebSocket integration.",
+        "Designed and implemented scalable application architecture that reduced server costs through advanced caching systems.",
+        "Eliminated $10-15K monthly in AWS QuickSight fees by developing custom BI solution.",
+        "Participated in client-facing discussions with beta wineries to gather product requirements, build technical credibility, and iterate on MVP features for AI-powered data analytics platform.",
+        "Collaborated on product roadmap planning and provided technical feasibility analysis for feature prioritization in pre-revenue startup backed by AWS and NVIDIA Inception Program."
+      ],
+      "technologies": ["Flutter", "AWS Suite", "Python", "Postgres", "Docker"],
+      "url": "https://www.corkvision.com/",
+      "alt": "CorkVision Website",
+      "photoUrl": "images/corkvision.webp",
+      "photoAlt": "CorkVision Demo"
+    },
+    {
+      "title": "Founder / Instructor",
+      "company": "PerfectLine",
+      "location": "Santa Cruz, CA",
+      "startDate": "October 2022",
+      "endDate": "May 2024",
+      "current": false,
+      "responsibilities": [
+        "Built a functional web application allowing users to learn from personally curated college level course content.",
+        "Managed 10+ clients simultaneously and handled the day-to-day operations as an independent business owner.",
+        "Developed comprehensive C++ curriculum covering data structures, OOP, and algorithm design."
+      ],
+      "technologies": ["NextJS", "Tailwindcss", "C++", "Unity"],
+      "url": "https://www.perfectline.io/",
+      "alt": "PerfectLine Website",
+      "photoUrl": "images/perfectline.webp",
+      "photoAlt": "PerfectLine Demo"
+    },
+    {
+      "title": "Instructor",
+      "company": "The Coder School",
+      "location": "Los Gatos, CA",
+      "startDate": "April 2022",
+      "endDate": "December 2022",
+      "current": false,
+      "responsibilities": [
+        "Designed and taught in-person software courses for students aged 12-16.",
+        "Adapted teaching methods to accommodate various skill levels in a classroom.",
+        "Simultaneously taught classes with 10-18 students in a range of topics and experience levels.",
+        "Created thoughtful lesson plans covering topics such as the video game development life cycle and front-end development."
+      ],
+      "technologies": ["Unity", "Python", "React", "Lua"],
+      "url": "https://www.thecoderschool.com/",
+      "alt": "The Coder School",
+      "photoUrl": "",
+      "photoAlt": "The Coder School Demo"
+    }
+  ],
+  "projects": [
+    {
+      "name": "SurfBored",
+      "url": "surfbored.app",
+      "alt": "SurfBored Website",
+      "status": "Present",
+      "startDate": "Present",
+      "endDate": "June 2024",
+      "technologies": [
+        "Flutter",
+        "AWS Suite",
+        "Firebase Auth",
+        "GitHub Actions",
+        "Docker"
+      ],
+      "description": "The only social app designed to get you off your phone and into real experiences with the people you care about.",
+      "highlights": [
+        "Architected and developed a full-stack mobile application using Flutter for cross-platform deployment, integrating Firebase Authentication and PostgreSQL database with Docker containerization.",
+        "Led a team of 3 developers through the complete product lifecycle, coordinating sprint planning, code reviews, and deployment strategies to deliver features on schedule.",
+        "Designed and implemented normalized database schemas and state management architecture using BLoC architecture, optimizing app performance and data consistency across user sessions."
+      ],
+      "photoUrl": "images/surfbored.webp",
+      "photoAlt": "SurfBored Demo"
+    },
+    {
+      "name": "PerfectLine",
+      "url": "perfectline.io",
+      "alt": "PerfectLine Website",
+      "status": "Completed",
+      "startDate": "October 2022",
+      "endDate": "May 2024",
+      "technologies": ["NextJS", "Tailwindcss", "C++", "Unity"],
+      "description": "Educational web application for learning C++ programming",
+      "highlights": [
+        "Deployed responsive web application serving a range of active students with personalized C++ curriculum and progress tracking.",
+        "Developed optimal techniques to handle page load, speed, package size and SEO efficiency through the Lighthouse development tool.",
+        "Created a CI/CD pipeline using GitHub actions for pushing new releases to deploy the app to the end user."
+      ],
+      "photoUrl": "images/perfectline2.webp",
+      "photoAlt": "PerfectLine Demo"
+    }
+  ],
+  "skills": {
+    "languages": [
+      "Dart",
+      "C++",
+      "C",
+      "TypeScript",
+      "JavaScript",
+      "Postgres",
+      "C#",
+      "Python"
+    ],
+    "frameworks": [
+      "Flutter",
+      "Unity",
+      "Astro",
+      "NextJS",
+      "Supabase",
+      "Firebase",
+      "Tailwindcss",
+      "React"
+    ],
+    "developerTools": [
+      "AWS Suite",
+      "Git",
+      "GitHub Actions",
+      "Docker",
+      "Google Cloud Platform",
+      "Linux",
+      "Cloudflare"
+    ]
+  },
+  "finalCta": {
+    "title": "Let's Build Something Together",
+    "subtitle": "I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.",
+    "email": "eokamura@ucsc.edu",
+    "github": "github.com/ethanokamura",
+    "website": "ethanokamura.io"
+  }
+}
