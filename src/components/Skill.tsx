@@ -1,12 +1,40 @@
-import type { IconType } from 'react-icons';
+import type { IconType } from "react-icons";
 import { Card } from "./Card";
-import { FaLinux, FaHtml5, FaCss3 } from 'react-icons/fa';
-import { FaC, FaCloudflare, FaDartLang } from 'react-icons/fa6';
-import { BiLogoAws, BiLogoCPlusPlus, BiLogoDocker, BiLogoFirebase, BiLogoFlutter, BiLogoGithub, BiLogoGoogleCloud, BiLogoJavascript, BiLogoPostgresql, BiLogoPython, BiLogoReact, BiLogoTailwindCss, BiLogoTypescript, BiLogoUnity } from 'react-icons/bi';
-import { SiAstro, SiClaude, SiRoblox } from 'react-icons/si';
-import { TbBrandNextjs, TbBrandSupabase } from 'react-icons/tb';
-import { PiFileCSharp } from 'react-icons/pi';
-import { BsGithub } from 'react-icons/bs';
+import { FaLinux, FaHtml5, FaCss3 } from "react-icons/fa";
+import { FaC, FaCloudflare, FaDartLang } from "react-icons/fa6";
+import {
+  BiLogoAws,
+  BiLogoCPlusPlus,
+  BiLogoDocker,
+  BiLogoFirebase,
+  BiLogoFlutter,
+  BiLogoGithub,
+  BiLogoGoogleCloud,
+  BiLogoJavascript,
+  BiLogoNodejs,
+  BiLogoPostgresql,
+  BiLogoPython,
+  BiLogoReact,
+  BiLogoTailwindCss,
+  BiLogoTypescript,
+  BiLogoUnity,
+} from "react-icons/bi";
+import {
+  SiAstro,
+  SiAuth0,
+  SiClaude,
+  SiDeno,
+  SiExpress,
+  SiGnubash,
+  SiGooglegemini,
+  SiHono,
+  SiRoblox,
+  SiTauri,
+  SiTerraform,
+} from "react-icons/si";
+import { TbBrandNextjs, TbBrandSupabase } from "react-icons/tb";
+import { PiFileCSharp } from "react-icons/pi";
+import { BsDatabase, BsGithub } from "react-icons/bs";
 
 const iconMap: Record<string, IconType> = {
   flutter: BiLogoFlutter,
@@ -39,15 +67,25 @@ const iconMap: Record<string, IconType> = {
   lua: SiRoblox,
   claude: SiClaude,
   githubactions: BsGithub,
+  node: BiLogoNodejs,
+  tauri: SiTauri,
+  express: SiExpress,
+  gemini: SiGooglegemini,
+  deno: SiDeno,
+  hono: SiHono,
+  terraform: SiTerraform,
+  auth0: SiAuth0,
+  neondb: BsDatabase,
+  bash: SiGnubash,
 };
 
 interface SkillProps {
   title: string;
 }
 
-export const Skill = ({title}: SkillProps) => {
-  const lower = title.toLowerCase().replaceAll(' ', '');
-  const skillName = lower == 'c++' ? 'cpp' : lower == 'c#' ? 'csharp' : lower;
+export const Skill = ({ title }: SkillProps) => {
+  const lower = title.toLowerCase().replaceAll(" ", "");
+  const skillName = lower == "c++" ? "cpp" : lower == "c#" ? "csharp" : lower;
   const Icon = iconMap[skillName];
   return (
     <Card>
@@ -55,8 +93,8 @@ export const Skill = ({title}: SkillProps) => {
         {/* Icon */}
         {Icon && <Icon size={32} className="text-accent" />}
         {/* Title */}
-        <p className='text-xl font-medium'>{title}</p>
+        <p className="text-xl font-medium">{title}</p>
       </div>
     </Card>
   );
-}
+};

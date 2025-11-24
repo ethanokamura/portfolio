@@ -1,7 +1,7 @@
 {
   "personalInfo": {
     "name": "Ethan",
-    "email": "eokamura@ucsc.edu",
+    "email": "ethanokamura3@gmail.com",
     "github": "github.com/ethanokamura",
     "website": "ethanokamura.io",
     "title": "I build software to make my life easier.",
@@ -40,7 +40,15 @@
         "Participated in client-facing discussions with beta wineries to gather product requirements, build technical credibility, and iterate on MVP features for AI-powered data analytics platform.",
         "Collaborated on product roadmap planning and provided technical feasibility analysis for feature prioritization in pre-revenue startup backed by AWS and NVIDIA Inception Program."
       ],
-      "technologies": ["Flutter", "AWS Suite", "Python", "Postgres", "Docker"],
+      "technologies": [
+        "Flutter",
+        "Node",
+        "Express",
+        "AWS Suite",
+        "Python",
+        "Postgres",
+        "Docker"
+      ],
       "url": "https://www.corkvision.com/",
       "alt": "CorkVision Website",
       "photoUrl": "images/corkvision.webp",
@@ -58,7 +66,7 @@
         "Managed 10+ clients simultaneously and handled the day-to-day operations as an independent business owner.",
         "Developed comprehensive C++ curriculum covering data structures, OOP, and algorithm design."
       ],
-      "technologies": ["NextJS", "Tailwindcss", "C++", "Unity"],
+      "technologies": ["NextJS", "Tailwindcss", "C++", "Unity", "Firebase"],
       "url": "https://www.perfectline.io/",
       "alt": "PerfectLine Website",
       "photoUrl": "images/perfectline.webp",
@@ -86,6 +94,37 @@
   ],
   "projects": [
     {
+      "name": "Anystack",
+      "url": "github.com/ethanokamura",
+      "alt": "Anystack Boilerplate and Services",
+      "status": "Present",
+      "startDate": "Present",
+      "endDate": "Present",
+      "technologies": [
+        "NextJS",
+        "Flutter",
+        "Node",
+        "Express",
+        "PostgreSQL",
+        "NeonDB",
+        "AWS Suite",
+        "Auth0",
+        "Terraform",
+        "TypeScript",
+        "Python",
+        "Bash",
+        "Docker"
+      ],
+      "description": "A proprietary, fully-featured, production-ready codebase and architecture designed to accelerate new product development across any modern stack.",
+      "highlights": [
+        "Developed a unique 'Access + Retainer' business model, generating guaranteed revenue through an upfront $10,000 Codebase Licensing Fee and a mandatory 90-Day Upfront Retainer.",
+        "Architected a standardized, full-stack template allowing clients to choose any modern stack (Deno, Node, NextJS, Flutter) deployed on AWS.",
+        "Secured Intellectual Property (IP) through a permissive licensing agreement, granting clients perpetual commercial use for internal business while protecting the underlying base template for continued sales."
+      ],
+      "photoUrl": "images/anystack.webp",
+      "photoAlt": "Anystack Architecture Diagram"
+    },
+    {
       "name": "SurfBored",
       "url": "surfbored.app",
       "alt": "SurfBored Website",
@@ -95,6 +134,8 @@
       "technologies": [
         "Flutter",
         "AWS Suite",
+        "Deno",
+        "Hono",
         "Firebase Auth",
         "GitHub Actions",
         "Docker"
@@ -109,21 +150,30 @@
       "photoAlt": "SurfBored Demo"
     },
     {
-      "name": "PerfectLine",
-      "url": "perfectline.io",
-      "alt": "PerfectLine Website",
+      "name": "Cosmiq",
+      "url": "github.com/ethanokamura/cosmiq",
+      "alt": "Cosmiq Repository",
       "status": "Completed",
-      "startDate": "October 2022",
-      "endDate": "May 2024",
-      "technologies": ["NextJS", "Tailwindcss", "C++", "Unity"],
-      "description": "Educational web application for learning C++ programming",
-      "highlights": [
-        "Deployed responsive web application serving a range of active students with personalized C++ curriculum and progress tracking.",
-        "Developed optimal techniques to handle page load, speed, package size and SEO efficiency through the Lighthouse development tool.",
-        "Created a CI/CD pipeline using GitHub actions for pushing new releases to deploy the app to the end user."
+      "startDate": "April 2025",
+      "endDate": "April 2025",
+      "technologies": [
+        "React",
+        "Tailwindcss",
+        "Tauri",
+        "Gemini",
+        "Node",
+        "Express",
+        "Google Cloud Platform",
+        "Docker"
       ],
-      "photoUrl": "images/perfectline2.webp",
-      "photoAlt": "PerfectLine Demo"
+      "description": "Smart markdown-based note-taking desktop app with AI-powered study tools built in 36 hours at CruzHacks 2025",
+      "highlights": [
+        "Built a WYSIWYG markdown editor desktop application using React and Tauri, implementing file system interaction to manage local notes and documents.",
+        "Architected and deployed Node.js/Express backend on Google Cloud Run to handle API requests, integrating Google Gemini APIs for AI-powered summarization and dynamic quiz generation with detailed explanations.",
+        "Developed frontend with React hooks, routing, and state management while coordinating between Rust-based Tauri desktop layer and cloud-hosted backend services."
+      ],
+      "photoUrl": "images/cosmiq.webp",
+      "photoAlt": "Cosmiq Demo"
     }
   ],
   "skills": {
@@ -142,6 +192,10 @@
       "Unity",
       "Astro",
       "NextJS",
+      "Node",
+      "Express",
+      "Deno",
+      "Hono",
       "Supabase",
       "Firebase",
       "Tailwindcss",
@@ -160,7 +214,7 @@
   "finalCta": {
     "title": "Let's Build Something Together",
     "subtitle": "I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.",
-    "email": "eokamura@ucsc.edu",
+    "email": "ethanokamura3@gmail.com",
     "github": "github.com/ethanokamura",
     "website": "ethanokamura.io"
   }
