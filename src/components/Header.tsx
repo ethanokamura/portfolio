@@ -10,7 +10,13 @@ export default function Header() {
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-4">
           <div className="w-8 h-8">
-            <img src={logo} className="logo" alt="My Logo" />
+            <img
+              src={logo}
+              className="logo"
+              alt="My Logo"
+              loading="lazy"
+              decoding="async"
+            />
           </div>
           <div
             className="text-xl font-semibold text-text tracking-tight 

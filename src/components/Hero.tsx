@@ -15,6 +15,8 @@ export default function Hero({ name, title, email, github }: HeroProps) {
         <img
           src="ethan.webp"
           alt="Ethan Okamura"
+          loading="lazy"
+          decoding="async"
           className="rounded-[20px] ring-1 ring-background/50 shadow-xl hover:shadow-2xl shadow-black/50 hover:scale-[105%] ease-in duration-100"
         />
       </div>

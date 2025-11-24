@@ -9,7 +9,13 @@ export default function Footer() {
           {/* Brand */}
           <div className="flex items-center gap-4">
             <div className="w-16 h-16">
-              <img src={logo} className="logo" alt="My Logo" />
+              <img
+                src={logo}
+                className="logo"
+                alt="My Logo"
+                loading="lazy"
+                decoding="async"
+              />
             </div>
             <div className="md:text-left">
               <div className="text-xl font-semibold text-text tracking-tight mb-2">
