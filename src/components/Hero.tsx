@@ -17,17 +17,17 @@ export default function Hero({ name, title, email, github }: HeroProps) {
           alt="Ethan Okamura"
           loading="lazy"
           decoding="async"
-          className="rounded-[20px] ring-1 ring-background/50 shadow-xl hover:shadow-2xl shadow-black/50 hover:scale-[105%] ease-in duration-100"
+          className="rounded-[20px] ring-1 ring-base-300 shadow-xl hover:shadow-2xl shadow-black/50 hover:scale-[105%] ease-in duration-100"
         />
       </div>
       {/* Hero Title */}
       <div className="flex flex-wrap items-center gap-4 justify-center w-fit mx-auto">
-        <h1 className="text-[clamp(3.5rem,10vw,7.5rem)] font-bold leading-none tracking-[-0.05em] text-text">
+        <h1 className="text-[clamp(3.5rem,10vw,7.5rem)] font-bold leading-none tracking-[-0.05em] text-base-content">
           Hi, I'm
         </h1>
         <h1
           className="text-[clamp(3.5rem,10vw,7.5rem)] font-bold leading-none tracking-[-0.05em] 
-                      bg-linear-to-br from-text via-accent to-cyan bg-size-[200%_200%]
+                      bg-linear-to-br from-base-content via-primary to-accent bg-size-[200%_200%]
                       bg-clip-text text-transparent animate-gradient-text"
         >
           {name.split("\n").map((line, i) => (
@@ -41,7 +41,7 @@ export default function Hero({ name, title, email, github }: HeroProps) {
 
       {/* Subtitle */}
       <p
-        className="text-[clamp(1.15rem,2.5vw,1.5rem)] text-subtext leading-relaxed 
+        className="text-[clamp(1.15rem,2.5vw,1.5rem)] text-base-content/70 leading-relaxed 
                     max-w-[700px] mx-auto opacity-0 animate-fade-in-up animation-delay-200"
       >
         {title.split("\n").map((line, i) => (

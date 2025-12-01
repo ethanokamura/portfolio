@@ -7,24 +7,26 @@
 
 @theme {
   /* Custom Colors */
-  --color-background: #10141a;
-  --color-surface: #161b23;
-  --color-primary: #1f2630;
-  --color-elevated: #252d39;
-  --color-text: #e8ecf0;
-  --color-subtext: #b0b8c3;
-  --color-hintText: #7a8390;
-  --color-inverseTextColor: #0d1015;
-  --color-shadowColor: #000000;
-  --color-borderColor: #1f2630;
-  --color-accent: #7dc4ff;
-  --color-success: #b3de8e;
-  --color-warning: #ffd88a;
-  --color-error: #ff7b85;
+  --color-base-100: #10141a;
+  --color-base-200: #161b23;
+  --color-base-300: #1f2630;
+  --color-base-content: #e8ecf0;
+  --color-primary: #7dc4ff;
+  --color-primary-content: #10141a;
+  --color-secondary: #7dc4ff;
+  --color-secondary-content: #10141a;
+  --color-accent: #d896ff;
+  --color-accent-content: #10141a;
+  --color-neutral: #252d39;
+  --color-neutral-content: #b0b8c3;
   --color-info: #7dc4ff;
-  --color-purple: #8875E0;
-  --color-pink: #d896ff;
-  --color-cyan: #70d4e0;
+  --color-info-content: #10141a;
+  --color-success: #b3de8e;
+  --color-success-content: #10141a;
+  --color-warning: #ffd88a;
+  --color-warning-content: #10141a;
+  --color-error: #ff7b85;
+  --color-error-content: #10141a;
 
   /* Font Family */
   --font-family-outfit: 'Outfit', sans-serif;
@@ -143,7 +145,7 @@
   }
 
   html {
-    background-color: var(--color-background);
+    background-color: var(--color-base-100);
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -155,7 +157,7 @@
     font-family: var(--font-family-outfit), -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: var(--color-text)
+    color: var(--color-base-content)
   }
 }
 

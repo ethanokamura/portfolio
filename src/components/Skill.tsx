@@ -1,5 +1,4 @@
 import type { IconType } from "react-icons";
-import { Card } from "./Card";
 import { FaLinux, FaHtml5, FaCss3 } from "react-icons/fa";
 import { FaC, FaCloudflare, FaDartLang } from "react-icons/fa6";
 import {
@@ -88,13 +87,11 @@ export const Skill = ({ title }: SkillProps) => {
   const skillName = lower == "c++" ? "cpp" : lower == "c#" ? "csharp" : lower;
   const Icon = iconMap[skillName];
   return (
-    <Card>
-      <div className="flex gap-2 justify-center items-center">
-        {/* Icon */}
-        {Icon && <Icon size={32} className="text-accent" />}
-        {/* Title */}
-        <p className="text-xl font-medium">{title}</p>
-      </div>
-    </Card>
+    <div className="flex gap-2 justify-center items-center">
+      {/* Icon */}
+      {Icon && <Icon size={32} className="text-primary" />}
+      {/* Title */}
+      <p className="text-xl font-medium">{title}</p>
+    </div>
   );
 };

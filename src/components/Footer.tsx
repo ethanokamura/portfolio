@@ -18,7 +18,7 @@ export default function Footer() {
               />
             </div>
             <div className="md:text-left">
-              <div className="text-xl font-semibold text-text tracking-tight mb-2">
+              <div className="text-xl font-semibold text-base-content tracking-tight mb-2">
                 Ethan Okamura
               </div>
               <p className="text-sm text-hintText">
@@ -31,7 +31,7 @@ export default function Footer() {
           <div className="flex flex-wrap justify-center gap-8 text-sm">
             <a
               href="mailto:ethan@ucsc.edu"
-              className="text-subtext hover:text-text transition-colors duration-200"
+              className="text-base-content/70 hover:text-base-content transition-colors duration-200"
             >
               Contact
             </a>
