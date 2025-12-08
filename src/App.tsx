@@ -91,8 +91,8 @@ export default function App() {
 
   return (
     <div>
-      <main className="px-10 py-20 w-full relative h-screen max-w-4xl mx-auto space-y-20 sm:space-y-20">
-        <div className="relative">
+      <main className="px-10 py-20 animate-fade-in-up w-full relative h-screen max-w-4xl mx-auto space-y-20 sm:space-y-20">
+        <div className="relative ">
           <h1 className="text-4xl md:text-6xl lg:text-9xl transition-all ease-linear duration-300">
             ETHAN
           </h1>
