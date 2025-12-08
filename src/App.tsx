@@ -28,7 +28,7 @@ export default function App() {
 
   if (selectedExperience) {
     return (
-      <main className="px-10 py-10 animate-fade-in-up w-full max-w-4xl mx-auto space-y-10">
+      <main className="p-4 sm:p-10 pb-20 animate-fade-in-up w-full max-w-4xl mx-auto space-y-10">
         <button
           className="inline-flex items-center gap-2 text-base-content/50 underline mb-10"
           onClick={() => handleSelectedExperience(undefined)}
@@ -91,7 +91,7 @@ export default function App() {
 
   return (
     <div>
-      <main className="px-10 py-10 sm:py-20 animate-fade-in-up w-full relative h-screen max-w-4xl mx-auto space-y-10 sm:space-y-20">
+      <main className="p-4 sm:p-10 pb-20 animate-fade-in-up w-full relative h-screen max-w-4xl mx-auto space-y-10 sm:space-y-20">
         <div className="relative ">
           <h1 className="text-4xl md:text-6xl lg:text-9xl transition-all ease-linear duration-300">
             ETHAN
@@ -120,7 +120,7 @@ export default function App() {
             </button>
           ))}
         </div>
-        <footer className="w-full flex text-xs sm:text-sm absolute bottom-0 left-0 pb-10 sm:px-0 px-10 justify-start sm:justify-end gap-2 sm:gap-10 text-base-content/70">
+        <footer className="w-full flex text-xs sm:text-sm absolute bottom-0 left-0 p-4 sm:p-10 justify-start sm:justify-end gap-2 sm:gap-10 text-base-content/70">
           <a href="https://www.linkedin.com/in/ethan-okamura/" target="_blank">
             LinkedIn
           </a>
