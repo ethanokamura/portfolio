@@ -72,7 +72,7 @@ export default function App() {
               className="flex items-start text-base lg:text-lg text-base-content/70 transition-all duration-300
                          hover:text-base-content hover:translate-x-1.5"
             >
-              <span className="text-primary text-4xl leading-[0.7] mr-3 drop-shadow-[0_0_8px_rgba(179,222,142,0.5)]">
+              <span className="text-primary text-4xl hidden sm:block leading-[0.7] mr-3 drop-shadow-[0_0_8px_rgba(179,222,142,0.5)]">
                 •
               </span>
               <span>{item}</span>
@@ -80,7 +80,7 @@ export default function App() {
           ))}
         </ul>
         {/* Technologies */}
-        <div className="flex flex-wrap justify-start gap-10">
+        <div className="flex flex-wrap justify-start gap-4 sm:gap-10">
           {selectedExperience.technologies.map((skill, index) => (
             <Skill key={index} title={skill} />
           ))}

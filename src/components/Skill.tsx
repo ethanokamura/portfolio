@@ -91,7 +91,9 @@ export const Skill = ({ title }: SkillProps) => {
       {/* Icon */}
       {Icon && <Icon size={24} className="text-primary" />}
       {/* Title */}
-      <p className="text-lg font-medium text-base-content/70">{title}</p>
+      <p className="text-sm sm:text-lg font-medium text-base-content/70">
+        {title}
+      </p>
     </div>
   );
 };
