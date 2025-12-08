@@ -89,9 +89,9 @@ export const Skill = ({ title }: SkillProps) => {
   return (
     <div className="flex gap-2 justify-center items-center">
       {/* Icon */}
-      {Icon && <Icon size={32} className="text-primary" />}
+      {Icon && <Icon size={24} className="text-primary" />}
       {/* Title */}
-      <p className="text-xl font-medium">{title}</p>
+      <p className="text-lg font-medium text-base-content/70">{title}</p>
     </div>
   );
 };
