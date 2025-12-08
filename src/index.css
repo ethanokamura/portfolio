@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap');
+@import "@fontsource-variable/zalando-sans-expanded";
+@import "@fontsource-variable/outfit";
 @import "tailwindcss";
 
 @theme {
@@ -8,23 +9,6 @@
   --color-base-300: #7b7b7b;
   --color-base-content: #222222;
   --color-primary: #7dc4ff;
-  --color-primary-content: #10141a;
-  --color-secondary: #7dc4ff;
-  --color-secondary-content: #10141a;
-  --color-accent: #d896ff;
-  --color-accent-content: #10141a;
-  --color-neutral: #252d39;
-  --color-neutral-content: #b0b8c3;
-  --color-info: #7dc4ff;
-  --color-info-content: #10141a;
-  --color-success: #b3de8e;
-  --color-success-content: #10141a;
-  --color-warning: #ffd88a;
-  --color-warning-content: #10141a;
-  --color-error: #ff7b85;
-  --color-error-content: #10141a;
-
-  /* Font Family */
   --font-family-outfit: 'Outfit', sans-serif;
   --font-family-zalando: 'Zalando Sans Expanded', sans-serif;
 
@@ -37,75 +21,8 @@
     }
   }
 
-  @keyframes glow {
-    from {
-      text-shadow: 0 0 20px rgba(125, 196, 255, 0.3);
-    }
-    to {
-      text-shadow: 0 0 40px rgba(125, 196, 255, 0.6);
-    }
-  }
-
   --animate-fade-in-up: fade-in-up 0.4s ease forwards;
-  --animate-fade-in-scroll: fade-in-up 1s ease forwards;
 }
-
-/* ===================================
-   CUSTOM UTILITIES
-   =================================== */
-
-@layer utilities {
-  /* Animation Delays */
-  .animation-delay-200 {
-    animation-delay: 0.2s;
-  }
-
-  .animation-delay-400 {
-    animation-delay: 0.4s;
-  }
-
-  .animation-delay-600 {
-    animation-delay: 0.6s;
-  }
-
-  .animation-delay-800 {
-    animation-delay: 0.8s;
-  }
-
-  .animation-delay-1000 {
-    animation-delay: 1s;
-  }
-
-  /* Direction Utilities */
-  .direction-rtl {
-    direction: rtl;
-  }
-
-  .direction-ltr {
-    direction: ltr;
-  }
-
-  /* Custom Backdrop Blur */
-  .backdrop-blur-custom {
-    backdrop-filter: blur(20px) saturate(180%);
-    -webkit-backdrop-filter: blur(20px) saturate(180%);
-  }
-
-  /* Scroll Animation Helper */
-  .animate-on-scroll {
-    opacity: 0;
-    transition: opacity 1s ease, transform 1s ease;
-  }
-
-  .animate-on-scroll.visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* ===================================
-   BASE STYLES
-   =================================== */
 
 @layer base {
   *::-webkit-scrollbar {
@@ -137,13 +54,10 @@
     font-family: var(--font-family-outfit), -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: var(--color-base-content)
+    color: var(--color-base-content);
+    font-weight: 400;
   }
 }
-
-/* ===================================
-   ACCESSIBILITY
-   =================================== */
 
 /* Reduced Motion Support */
 @media (prefers-reduced-motion: reduce) {

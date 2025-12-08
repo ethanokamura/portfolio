@@ -1,0 +1,23 @@
+# robots.txt for ethanokamura.io
+
+# Allow all search engines to crawl everything
+User-agent: *
+Allow: /
+
+# Sitemap location (update with your actual sitemap URL when you create one)
+Sitemap: https://ethanokamura.io/sitemap.xml
+
+# Crawl delay (optional - helps prevent server overload)
+# Crawl-delay: 1
+
+# Common paths to disallow (if applicable in the future)
+# Disallow: /api/
+# Disallow: /admin/
+# Disallow: /_next/static/
+
+# Specific bot rules (optional)
+# User-agent: GPTBot
+# Allow: /
+
+# User-agent: ChatGPT-User
+# Allow: /

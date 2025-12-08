@@ -1,8 +1,7 @@
 import { experience } from "./assets/data.json";
 import { useState } from "react";
 import { Skill } from "./components/Skill";
-import { FaArrowUpRightFromSquare } from "react-icons/fa6";
-import { MdArrowBackIos } from "react-icons/md";
+import { ExternalLink, ChevronLeft } from "lucide-react";
 
 interface Experience {
   name: string;
@@ -28,12 +27,12 @@ export default function App() {
 
   if (selectedExperience) {
     return (
-      <main className="p-4 sm:p-10 pb-20 animate-fade-in-up w-full max-w-4xl mx-auto space-y-10">
+      <main className="opacity-1 p-4 sm:p-10 pb-20 animate-fade-in-up w-full max-w-4xl mx-auto space-y-10">
         <button
           className="inline-flex items-center gap-2 text-base-content/50 underline mb-10"
           onClick={() => handleSelectedExperience(undefined)}
         >
-          <MdArrowBackIos />
+          <ChevronLeft />
           Go Back
         </button>
 
@@ -54,10 +53,7 @@ export default function App() {
             {selectedExperience.name}
           </h2>
           <a href={`https://${selectedExperience.url}`} target="_blank">
-            <FaArrowUpRightFromSquare
-              size={18}
-              className="text-base-content/50 mt-2"
-            />
+            <ExternalLink size={18} className="text-base-content/50 mt-2" />
           </a>
         </div>
         {/* Description */}
@@ -91,7 +87,7 @@ export default function App() {
 
   return (
     <div>
-      <main className="p-4 sm:p-10 pb-20 animate-fade-in-up w-full relative h-screen max-w-4xl mx-auto space-y-10 sm:space-y-20">
+      <main className="p-4 sm:p-10 pb-20 w-full relative h-screen max-w-4xl mx-auto space-y-10 sm:space-y-20">
         <div className="relative ">
           <h1 className="text-4xl md:text-6xl lg:text-9xl transition-all ease-linear duration-300">
             ETHAN
@@ -103,7 +99,7 @@ export default function App() {
             I build software to make my life easier.
           </h2>
         </div>
-        <div className="flex flex-col items-start w-full text-zalando text-xl md:text-3xl lg:text-4xl font-light space-y-4 transition-all ease-linear duration-300">
+        <div className="flex flex-col items-start w-full text-zalando text-xl md:text-3xl lg:text-4xl font-base space-y-4 transition-all ease-linear duration-300">
           {experience.map((e) => (
             <button
               onClick={() => handleSelectedExperience(e)}

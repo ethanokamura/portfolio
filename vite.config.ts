@@ -7,13 +7,19 @@ export default defineConfig({
   plugins: [react(), tailwindcss()],
   base: "/",
   build: {
+    minify: "terser", // or 'esbuild' for faster builds
+    terserOptions: {
+      compress: {
+        drop_console: true, // Remove console.logs in production
+        drop_debugger: true,
+      },
+    },
     rollupOptions: {
       output: {
         manualChunks: {
-          "react-vendor": ["react", "react-dom"],
+          lucide: ["lucide-react"],
         },
       },
     },
-    minify: "terser",
   },
 });
