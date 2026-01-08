@@ -1,6 +1,32 @@
 {
   "experience": [
     {
+      "name": "Full-Stack Mobile Developer @ Influur",
+      "key": "Influur",
+      "description": "Building influencer marketing strategies through cutting-edge technology.",
+      "url": "https://www.influur.com/",
+      "startDate": "January 2026",
+      "endDate": "Present",
+      "photoUrl": "images/influur-wide.webp",
+      "alt": "Influur Website",
+      "photoAlt": "Influur Demo",
+      "highlights": [],
+      "technologies": ["Flutter", "Node", "Express"]
+    },
+    {
+      "name": "Web Dev Contractor",
+      "key": "Web Dev Contractor",
+      "description": "Private web development contractor for local businesses.",
+      "url": "",
+      "startDate": "December 2025",
+      "endDate": "Present",
+      "photoUrl": "images/luckybeepress-wide.webp",
+      "alt": "LuckyBeePress Website",
+      "photoAlt": "LuckyBeePress Demo",
+      "highlights": [],
+      "technologies": ["NextJS", "Firebase"]
+    },
+    {
       "name": "Founding Product Engineer @ CorkVision",
       "key": "CorkVision",
       "description": "AI Data Analytics for the Wine Industry",
