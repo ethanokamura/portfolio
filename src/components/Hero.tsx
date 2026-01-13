@@ -1,85 +1,72 @@
 import { Github, Linkedin, Mail, ArrowDown } from "lucide-react";
+import data from "@/assets/data.json";
 
 export function Hero() {
   return (
-    <section className="min-h-screen flex flex-col justify-center relative px-5 md:px-12 lg:px-20">
-      {/* Grid background - desktop only */}
-      <div className="absolute inset-0 grid-bg opacity-40 hide-mobile" />
+    <section className="min-h-dvh flex flex-col justify-center relative px-5 sm:px-6 md:px-12 lg:px-24 overflow-hidden safe-area-top">
+      {/* Gradient blobs */}
+      <div className="blob blob-1" />
+      <div className="blob blob-2" />
 
-      {/* Corner decorations - desktop only */}
-      <div className="absolute top-8 left-8 w-16 h-16 border-l-2 border-t-2 border-primary/30 hide-mobile" />
-      <div className="absolute top-8 right-8 w-16 h-16 border-r-2 border-t-2 border-primary/30 hide-mobile" />
-      <div className="absolute bottom-8 left-8 w-16 h-16 border-l-2 border-b-2 border-primary/30 hide-mobile" />
-      <div className="absolute bottom-8 right-8 w-16 h-16 border-r-2 border-b-2 border-primary/30 hide-mobile" />
-
-      <div className="relative z-10 max-w-4xl">
-        {/* Status */}
-        <div className="flex items-center gap-3 mb-6 md:mb-8">
-          <div className="w-2 h-2 bg-muted-foreground/50" />
-          <span className="font-mono text-xs md:text-sm text-muted-foreground tracking-wider uppercase">
-            Building at Influur
-          </span>
-        </div>
-
+      <div className="relative z-10 max-w-3xl">
         {/* Name */}
-        <div className="relative mb-4 md:mb-6">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight">
-            <span className="text-foreground">Ethan</span>
-            <br />
-            <span className="text-primary">Okamura</span>
-          </h1>
-          <div className="absolute -left-3 md:-left-4 top-1/2 -translate-y-1/2 w-1 h-16 md:h-20 bg-primary hide-mobile" />
-        </div>
+        <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-4 sm:mb-6 opacity-0 animate-fade-up stagger-2">
+          <span className="text-foreground">Ethan</span>
+          <br />
+          <span className="text-primary">Okamura</span>
+        </h1>
 
-        {/* Description */}
-        <p className="text-base md:text-xl text-muted-foreground max-w-lg mb-8 md:mb-10">
-          Building products from zero to one.
+        {/* Tagline */}
+        <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-md mb-8 sm:mb-10 opacity-0 animate-fade-up stagger-3">
+          {data.about.intro}
+          <span className="block mt-2 text-sm sm:text-base text-muted-foreground/70">
+            Fullstack engineer specializing in mobile and web applications.
+          </span>
         </p>
 
         {/* Social links */}
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-3 sm:gap-4 opacity-0 animate-fade-up stagger-4">
           <a
             href="https://github.com/ethanokamura"
             target="_blank"
             rel="noopener noreferrer"
-            className="p-2.5 md:p-3 border border-border hover:border-primary hover:bg-primary/10 transition-colors"
+            className="p-3 rounded-full bg-muted/50 border border-border/50 hover:border-primary/50 hover:bg-primary/10 active:scale-95 transition-all link-glow"
             aria-label="GitHub"
           >
-            <Github className="w-5 h-5 text-muted-foreground" />
+            <Github className="w-5 h-5" />
           </a>
           <a
             href="https://www.linkedin.com/in/ethan-okamura/"
             target="_blank"
             rel="noopener noreferrer"
-            className="p-2.5 md:p-3 border border-border hover:border-primary hover:bg-primary/10 transition-colors"
+            className="p-3 rounded-full bg-muted/50 border border-border/50 hover:border-primary/50 hover:bg-primary/10 active:scale-95 transition-all link-glow"
             aria-label="LinkedIn"
           >
-            <Linkedin className="w-5 h-5 text-muted-foreground" />
+            <Linkedin className="w-5 h-5" />
           </a>
           <a
-            href="mailto:ethanokamura3@gmail.com"
-            className="p-2.5 md:p-3 border border-border hover:border-primary hover:bg-primary/10 transition-colors"
+            href={`mailto:${data.about.email}`}
+            className="p-3 rounded-full bg-muted/50 border border-border/50 hover:border-primary/50 hover:bg-primary/10 active:scale-95 transition-all link-glow"
             aria-label="Email"
           >
-            <Mail className="w-5 h-5 text-muted-foreground" />
+            <Mail className="w-5 h-5" />
           </a>
-          <div className="h-px flex-1 max-w-16 bg-border ml-2 hide-mobile" />
+
+          <div className="hidden md:block h-px flex-1 max-w-24 bg-linear-to-r from-border to-transparent ml-2" />
         </div>
       </div>
 
       {/* Scroll indicator */}
-      <div className="absolute bottom-8 md:bottom-12 left-1/2 -translate-x-1/2">
-        <a
-          href="#work"
-          className="flex flex-col items-center gap-2 text-muted-foreground/60 hover:text-primary transition-colors"
-          aria-label="Scroll to work"
-        >
-          <span className="font-mono text-xs uppercase tracking-widest">
-            Scroll
-          </span>
-          <ArrowDown className="w-4 h-4" />
-        </a>
-      </div>
+      <a
+        href="#experience"
+        className="absolute bottom-6 sm:bottom-8 md:bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1.5 sm:gap-2 text-muted-foreground/50 hover:text-primary active:text-primary transition-colors opacity-0 animate-fade-up stagger-5 p-2"
+        aria-label="Scroll to experience"
+      >
+        <span className="font-mono text-[10px] uppercase tracking-widest">
+          Scroll
+        </span>
+        <ArrowDown className="w-4 h-4 animate-bounce" />
+      </a>
     </section>
   );
 }

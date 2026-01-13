@@ -1,187 +1,121 @@
 {
-  "experience": [
+  "jobs": [
     {
-      "name": "Full-Stack Mobile Developer @ Influur",
-      "key": "Influur",
-      "description": "Building influencer marketing strategies through cutting-edge technology.",
-      "url": "https://www.influur.com/",
-      "startDate": "January 2026",
-      "endDate": "Present",
-      "photoUrl": "images/influur-wide.webp",
-      "alt": "Influur Website",
-      "photoAlt": "Influur Demo",
-      "highlights": [],
-      "technologies": ["Flutter", "Node", "Express"]
+      "id": "influur",
+      "company": "Influur",
+      "role": "Fullstack Software Engineer",
+      "period": "Jan 2026 - Present",
+      "description": "Platform connecting brands with influencers for marketing collaborations.",
+      "technologies": ["Flutter", "Next.js", "Node.js"]
     },
     {
-      "name": "Web Dev Contractor",
-      "key": "Web Dev Contractor",
-      "description": "Private web development contractor for local businesses.",
-      "url": "",
-      "startDate": "December 2025",
-      "endDate": "Present",
-      "photoUrl": "images/luckybeepress-wide.webp",
-      "alt": "LuckyBeePress Website",
-      "photoAlt": "LuckyBeePress Demo",
-      "highlights": [],
-      "technologies": ["NextJS", "Firebase"]
-    },
-    {
-      "name": "Founding Product Engineer @ CorkVision",
-      "key": "CorkVision",
-      "description": "AI Data Analytics for the Wine Industry",
-      "url": "https://www.corkvision.com/",
-      "startDate": "January 2025",
-      "endDate": "November 2025",
-      "photoUrl": "images/corkvision-wide.webp",
-      "alt": "CorkVision Website",
-      "photoAlt": "CorkVision Demo",
+      "id": "corkvision",
+      "company": "CorkVision",
+      "role": "Founding Product Engineer",
+      "period": "Jan 2025 - Nov 2025",
+      "description": "AI-powered data analytics platform for the wine industry. Joined as second employee at pre-revenue startup backed by AWS and NVIDIA.",
+      "technologies": ["Flutter", "Node.js", "AWS", "PostgreSQL"],
       "highlights": [
-        "Joined as the second employee and Founding Product Engineer at a pre-revenue startup backed by AWS and NVIDIA Inception Program.",
-        "Functioned as the sole frontend developer and Technical Lead, architecting and developing over 60% of the production codebase for cross-platform web and mobile applications (Flutter, Node.js, AWS services).",
-        "Designed the monolithic service architecture and managed the CI/CD pipeline, ensuring a fast, stable, and unified codebase for both web and mobile deployment.",
-        "Delivered a strategic impact by developing a custom Business Intelligence (BI) solution that eliminated $10K-$15K in monthly recurring costs (by replacing AWS QuickSight).",
-        "Spearheaded client relations, meeting weekly with beta wineries to gather product requirements, iterate rapidly on MVP features, and directly influence the development roadmap."
-      ],
-      "technologies": [
-        "Flutter",
-        "Node",
-        "Express",
-        "AWS Suite",
-        "Python",
-        "Postgres",
-        "Docker"
-      ]
-    },
-    {
-      "name": "Founder / Instructor @ PerfectLine",
-      "key": "PerfectLine",
-      "description": "Premium, Interactive, Project-Based Courses.",
-      "url": "https://www.perfectline.io/",
-      "startDate": "October 2022",
-      "endDate": "May 2024",
-      "photoUrl": "images/perfectline-wide.webp",
-      "alt": "PerfectLine Demo",
-      "highlights": [
-        "Delivered a production web application serving a range of active students with personalized C++ curriculum and progress tracking.",
-        "Managed 10-15 clients simultaneously, handling all operations including curriculum planning, billing, and scheduling.",
-        "Developed comprehensive C++ curriculum covering data structures, OOP, and algorithm design."
-      ],
-      "technologies": ["NextJS", "Tailwindcss", "C++", "Unity", "Firebase"]
-    },
-
-    {
-      "name": "BentoLabs",
-      "key": "BentoLabs",
-      "description": "A proprietary, fully-featured, production-ready codebase and architecture designed to accelerate new product development across any modern stack.",
-      "url": "github.com/ethanokamura",
-      "startDate": "Present",
-      "endDate": "Present",
-      "photoUrl": "images/bentolabs-wide.webp",
-      "alt": "BentoLabs Landing Page",
-      "highlights": [
-        "Architected and developed a codebase automation tool to save on 3-6 months of development time.",
-        "Constructed seamless frontend component libraries and the application layer across two core frameworks: Flutter for cross-platform mobile and Next.js/React for web deployment.",
-        "Developed two distinct, high-performance backend options using Deno/Hono and Node/Express runtimes, providing clients with ultimate flexibility based on performance requirements."
-      ],
-      "technologies": [
-        "NextJS",
-        "Flutter",
-        "Node",
-        "Express",
-        "PostgreSQL",
-        "NeonDB",
-        "AWS Suite",
-        "Auth0",
-        "Terraform",
-        "TypeScript",
-        "Python",
-        "Bash",
-        "Docker"
-      ]
-    },
-    {
-      "name": "SurfBored",
-      "key": "SurfBored",
-      "description": "The only social app designed to get you off your phone and into real experiences with the people you care about.",
-      "url": "surfbored.app",
-      "startDate": "June 2024",
-      "endDate": "Present",
-      "photoUrl": "images/surfbored-wide.webp",
-      "alt": "SurfBored Demo",
-      "highlights": [
-        "Built a cross-platform mobile application using Flutter, integrating Firebase Authentication and PostgreSQL database with Docker containerization.",
-        "Led a small team of developers through the complete product lifecycle, coordinating sprint planning, code reviews, and deployment strategies to deliver features on schedule.",
-        "Designed and implemented normalized database schemas and state management architecture using BLoC architecture, optimizing app performance and data consistency across user sessions."
-      ],
-      "technologies": [
-        "Flutter",
-        "AWS Suite",
-        "Deno",
-        "Hono",
-        "Firebase Auth",
-        "GitHub Actions",
-        "Docker"
-      ]
-    },
-    {
-      "name": "Cosmiq",
-      "key": "Comsiq",
-      "description": "Smart markdown-based note-taking desktop app with AI-powered study tools built in 36 hours at CruzHacks 2025",
-      "url": "github.com/ethanokamura/cosmiq",
-      "startDate": "April 2025",
-      "endDate": "April 2025",
-      "photoUrl": "images/cosmiq-wide.webp",
-      "alt": "Cosmiq Demo",
-      "highlights": [
-        "Built a WYSIWYG markdown editor desktop application using React and Tauri, implementing file system interaction to manage local notes and documents.",
-        "Architected and deployed Node.js/Express backend on Google Cloud Run to handle API requests, integrating Google Gemini APIs for AI-powered summarization and dynamic quiz generation with detailed explanations.",
-        "Developed frontend with React hooks, routing, and state management while coordinating between Rust-based Tauri desktop layer and cloud-hosted backend services."
-      ],
-      "technologies": [
-        "React",
-        "Tailwindcss",
-        "Tauri",
-        "Gemini",
-        "Node",
-        "Express",
-        "Google Cloud Platform",
-        "Docker"
+        "Architected and developed 60%+ of production codebase",
+        "Built custom BI solution saving $10-15K/month",
+        "Led weekly client meetings with beta wineries"
       ]
     }
   ],
-  "unreleased": [
+  "contracts": [
     {
+      "id": "luckybeepress",
       "name": "LuckyBeePress",
-      "key": "Lucky Bee Press",
-      "description": "",
-      "url": "",
-      "startDate": "December 2025",
-      "endDate": "Present",
-      "photoUrl": "",
-      "alt": "",
-      "highlights": [],
-      "technologies": [
-        "NextJS",
-        "Deno",
-        "Hono",
-        "PostgreSQL",
-        "NeonDB",
-        "Auth0",
-        "Docker"
-      ]
+      "description": "Wholesale e-commerce site for a local letterpress business with custom checkout flow.",
+      "technologies": ["Next.js", "Firebase", "Stripe"],
+      "link": "https://wholesale.luckybeepress.com/",
+      "image": "screens/luckybeepress.webp"
     },
     {
-      "name": "TheDigitalStorm",
-      "key": "The Digital Storm",
-      "description": "",
-      "url": "",
-      "startDate": "December 2025",
-      "endDate": "Present",
-      "photoUrl": "",
-      "alt": "",
-      "highlights": [],
-      "technologies": ["NextJS"]
+      "id": "digitalstorm",
+      "name": "The Digital Storm",
+      "description": "Educational platform promoting online safety against financial scams.",
+      "technologies": ["Next.js", "Tailwind CSS"],
+      "link": "https://www.thedigitalstorm.com/",
+      "image": "screens/thedigitalstorm.webp"
+    },
+    {
+      "id": "hawkphoto",
+      "name": "Hawk Photography",
+      "description": "Portfolio website for a professional photographer showcasing their work.",
+      "technologies": ["Next.js", "Tailwind CSS"],
+      "link": "https://hawk-photography.vercel.app/",
+      "image": "screens/hawkphotography.webp"
     }
-  ]
+  ],
+  "projects": [
+    {
+      "id": "bentolabs",
+      "name": "BentoLabs",
+      "description": "Automated MVP generation using AI agents. Production-ready codebase templates saving 3-6 months of development time.",
+      "technologies": [
+        "Claude SDK",
+        "Next.js",
+        "Flutter",
+        "Node.js",
+        "Terraform",
+        "AWS"
+      ],
+      "image": "screens/bentolabs.webp",
+      "link": "https://github.com/ethanokamura",
+      "featured": true
+    },
+    {
+      "id": "surfbored",
+      "name": "SurfBored",
+      "description": "Activity and event discovery app designed to get users off their phones and into real experiences.",
+      "technologies": ["Flutter", "Deno", "Hono", "PostgreSQL"],
+      "image": "screens/surfbored.webp",
+      "link": "https://surfbored.app",
+      "featured": true
+    },
+    {
+      "id": "perfectline",
+      "name": "PerfectLine",
+      "description": "Online courses and personal tutoring platform for C++ programming education.",
+      "technologies": ["Next.js", "Firebase", "Tailwind CSS"],
+      "image": "screens/perfectline.webp",
+      "link": "https://perfectline.io",
+      "featured": true
+    },
+    {
+      "id": "catmat",
+      "name": "CatMat",
+      "description": "E-commerce store for premium desk accessories and desk mats.",
+      "technologies": ["Next.js", "Firebase", "Stripe"],
+      "link": "https://catmat.shop"
+    },
+    {
+      "id": "cosmiq",
+      "name": "Cosmiq",
+      "description": "AI-powered markdown note-taking app built in 36 hours at CruzHacks 2025.",
+      "technologies": ["React", "Tauri", "Node.js", "Gemini"],
+      "image": "screens/cosmiq.webp",
+      "link": "https://github.com/ethanokamura/cosmiq"
+    }
+  ],
+  "skills": [
+    "C++",
+    "Flutter",
+    "React",
+    "Next.js",
+    "Node.js + Express",
+    "Deno + Hono",
+    "PostgreSQL",
+    "Docker",
+    "Python",
+    "Unity"
+  ],
+  "about": {
+    "intro": "I build products from zero to one.",
+    "bio": "Started programming at 9 with game development. Now I focus on shipping products that actually matter — from early-stage startups to contract work.",
+    "education": "UC Santa Cruz",
+    "location": "SF Bay Area",
+    "email": "ethanokamura3@gmail.com"
+  }
 }
